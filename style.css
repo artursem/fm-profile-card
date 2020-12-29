@@ -1,0 +1,95 @@
+/*  mobile 375px
+    desktop 1440px */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    --cyan: hsl(185, 75%, 39%);
+    --blue: hsl(229, 23%, 23%);
+    --gray: hsl(277, 10%, 46%);
+    font-size: 18px;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    min-height: 99vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--gray);
+    background: var(--cyan);
+
+/*  background-image:   url(images/bg-pattern-top.svg),
+                        url(images/bg-pattern-bottom.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: -100% -50%; */
+}
+b {
+    color: var(--blue);
+    font-size: 1rem;
+    letter-spacing: normal;
+}
+.small {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+.attribution {
+    margin-top: auto;
+}
+.card {
+    margin: auto;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-rows: 120px 150px auto;
+    grid-template-columns: auto;
+}
+.top-image {
+    background-color: var(--cyan);
+    background-image: url(images/bg-pattern-card.svg);
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.user-name {
+    text-align: center;
+    position: relative;
+    padding-top: 5.5rem;
+}
+#profile-pic {
+    display: block;
+    width: 126px;
+    border-radius: 50%;
+    border: 7px solid white;
+    margin: 0 auto 0 auto;
+    position: absolute;
+    top: -50px;
+    left: 87px;
+}
+.stats-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem 1rem 2rem 1rem;
+    font-size: 0.5rem;
+    letter-spacing: .1rem;
+
+}
+.stat {
+    text-align: center;
+}
+.stat p {
+    padding-top: .5rem;
+}
+.divider {
+    height: 1px;
+    width: 98%;
+    background-color: var(--gray);
+    opacity: 20%;
+    margin: 1rem auto 2rem auto;
+}
